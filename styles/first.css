@@ -1,0 +1,62 @@
+body {
+    font-family: "Roboto Slab", serif;
+}
+h* {
+    margin: o;
+}
+
+.headline {
+    margin: 20px auto;
+    text-align: center;
+}
+.container {
+    padding: 40px;
+    background-color: blueviolet;
+}
+.da-grid {
+    padding: 40px;
+    background-color: #da70d690;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 10px; */
+    text-align: center;
+    gap: 10px 20px;
+}
+.box {
+    padding: 40px;
+    border-radius: 10px;
+    /* margin-top: 10px; */
+    box-shadow: 2px 2px 14px #0000009a;
+}
+.box-a, .box-c, .box-e, .box-g {
+    background-color: #ee82ee9a;
+}
+.box-b, .box-d, .box-f, .box-h {
+    background-color: #8000809f;
+}
+.box-a {
+    grid-area: 1 / 1 / 1 / 4;
+}
+.box-b {
+    grid-area: 2 / 1 / 3 / 4;
+}
+.box-c {
+    grid-area: 4 / 1 / 4 / 4;
+}
+.box-d {
+    grid-area: 5 / 1 / 5 / 4;
+}
+ .box-e {
+    grid-area: 1 / 4 / 4 / 5;
+}
+/*.box-f {
+
+}
+.box-g {
+
+}
+.box-g {
+
+}
+.box-h {
+} */
