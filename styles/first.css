@@ -1,5 +1,7 @@
 body {
     font-family: "Roboto Slab", serif;
+    width: 80%;
+    margin: 10px auto;
 }
 h* {
     margin: o;
@@ -8,55 +10,70 @@ h* {
 .headline {
     margin: 20px auto;
     text-align: center;
+    padding: 10px 60px;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgrey;
 }
 .container {
-    padding: 40px;
+    padding: 60px;
     background-color: blueviolet;
+    margin: auto;
 }
+
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 14px #0000009a;
+}
+.box:nth-child(even) {
+    background-color: #ee82ee9a;
+}
+.box:nth-child(odd) {
+    background-color: #8000809f;
+}
+.box h2 {
+    display: inline;
+    float: left;
+    padding-right: 16px;
+    padding-bottom: 0;
+}
+.box-a {
+    grid-area: t-one;
+}
+.box-b {
+    grid-area: t-two;
+}
+.box-c {
+    grid-area: t-three;
+}
+.box-d {
+    grid-area: t-four;
+}
+.box-e {
+    grid-area: t-mid;
+    background-image: url('../images/yarrow-stalks-for-the-i-ching.jpg');
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-size: cover;
+}
+
 .da-grid {
     padding: 40px;
     background-color: #da70d690;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* gap: 10px; */
-    text-align: center;
-    gap: 10px 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    /* text-align: center; */
+    gap: 20px;
+    grid-template-areas: 
+        "t-one t-one t-one t-two t-two"
+        "t-one t-one t-one t-two t-two"
+        "t-four t-four t-mid t-two t-two"
+        "t-four t-four t-three t-three t-three"
+        "t-four t-four t-three t-three t-three";
 }
-.box {
-    padding: 40px;
-    border-radius: 10px;
-    /* margin-top: 10px; */
-    box-shadow: 2px 2px 14px #0000009a;
+.name {
+    text-align: end;
 }
-.box-a, .box-c, .box-e, .box-g {
-    background-color: #ee82ee9a;
-}
-.box-b, .box-d, .box-f, .box-h {
-    background-color: #8000809f;
-}
-.box-a {
-    grid-area: 1 / 1 / 1 / 4;
-}
-.box-b {
-    grid-area: 2 / 1 / 3 / 4;
-}
-.box-c {
-    grid-area: 4 / 1 / 4 / 4;
-}
-.box-d {
-    grid-area: 5 / 1 / 5 / 4;
-}
- .box-e {
-    grid-area: 1 / 4 / 4 / 5;
-}
-/*.box-f {
-
-}
-.box-g {
-
-}
-.box-g {
-
-}
-.box-h {
-} */
