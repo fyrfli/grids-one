@@ -4,7 +4,7 @@ There is a Frontend Mentor Challenge that I have queued up to do. I got a little
 
 Showcasing it here because I am rather proud of what I accomplished in a couple hours.
 
-[Want to see it live?](https://fyrfli.io/grids-one)
+[Want to see it live?](https://camille.fyrfli.io/grids-one)
 
 ---
 8-Feb-2022
